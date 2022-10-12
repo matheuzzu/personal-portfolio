@@ -1,0 +1,26 @@
+:root {
+  --white: #fff;
+  --bg-grad: linear-gradient(#1c2938, #121a24);
+  --black: #111;
+  --purple: #8b68ff;
+  --gray: #a9adb8;
+  --dark-blue:#121a24;
+}
+.white {
+  color: #fff;
+}
+.gray {
+  color: #a9adb8;
+}
+.black {
+  color: #111;
+}
+.dark-blue{
+  color: #121a24;
+}
+.purple {
+  color: #8b68ff;
+}
+.bg-grad {
+  color: linear-gradient(#1c2938, #121a24);
+}

@@ -1,0 +1,11 @@
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background-color: #d6d6d6;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.copyright i {
+  color: #48dbfb;
+}

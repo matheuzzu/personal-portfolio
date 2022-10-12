@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="/js/scripts.js"></script>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">Logo</a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="menu-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!----------Home--------->
+
+  <main id="home" class="intro-bg">
+    <div class="container">
+      <div class="content">
+        <h3>Hi I'm </h3>
+        <h1>Matheus<br>Fonseca</h1>
+        <h2>Visual Designer</h2>
+        <div class="buttons">
+          <a href="#">Contact me</a>
+        </div>
+      </div>
+      <img class="img" src="./images/BG-PBG.png" alt="png-image">
+    </div>
+  </main>
+
+  <!-- ---------about--------- -->
+
+  <article id="about" class="about-bg">
+    <div class="container">
+      <h1 class="section-title">About Me</h1>
+      <div class="row">
+        <div class="about-col-1">
+          <img src="/images/user.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">Hi there! I'm Matheus Fonseca</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, corporis ipsa autem quia illo deserunt, molestias animi voluptatem omnis facilis accusantium quisquam cumque saepe! Quidem soluta illum voluptas! Maiores, fuga?</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development</span><br>Building Android/IOS apps</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2021 - Current</span><br>UI/UX Design Training</li>
+              <li><span>2019 - 2021</span><br>Team lead at Starapp LLC</li>
+              <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2016</span><br>UI/UX at ET Institute</li>
+              <li><span>2017</span><br>MBA from USP</li>
+              <li><span>2018</span><br>BBA from Harvard</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!--------- Portfolio-------->
+
+  <article id="portfolio" class="portfolio-bg">
+    <div class="container">
+      <h1 class="section-title">Portfolio</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="/images/works/work-1.jpg">
+          <div class="layer">
+            <h3>YouDrone</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolorum Lorem!</p>
+            <a href="https://matheuzzu.github.io/youdrone/"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="/images/works/work-2.png">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolorum Lorem!</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="/images/works/work-3.png">
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolorum Lorem!</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </article>
+
+  <!-- -------- Contact ---------->
+
+  <section id="contact" class="contact-bg">
+    <div class="container">
+      <h1 class="section-title">Contact Me</h1>
+      <div class="row">
+        <div class="contact-left">
+          <p><i class="fas fa-paper-plane"></i> contact@example</p>
+          <p> <i class="fas fa-phone-square-alt"></i> 0123456789</p>
+          <div class="social-icons">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="images/works/CV_MatheusFonseca.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="copyright">
+      <p>© 2022. Designed by Matheus. All right reserved. <i class="fas fa-heart"></i></p>
+    </div>
+  </footer>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+</body>
+
+</html>

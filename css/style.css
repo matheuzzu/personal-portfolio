@@ -1,0 +1,19 @@
+@import "./global/global.css";
+
+@import "./utilities/components.css";
+
+@import "./global/header.css";
+
+@import "./home/intro.css";
+
+@import "./home/about.css";
+
+@import "./home/portfolio.css";
+
+@import "./home/contact.css";
+
+@import "./home/footer.css";
+
+@import "./utilities/color.css";
+
+@import "./utilities/typography.css";
