@@ -98,9 +98,9 @@
 
   <!--------- Portfolio-------->
 
-  <article id="portfolio" class="work-list portfolio-bg">
-    <div class="container">
-      <h1 class="section-title">Portfolio</h1>
+  <article id="portfolio" class="portfolio-bg">
+    <h1 class="section-title">Portfolio</h1>
+    <div class="work-list container">
       <ul>
         <li>
           <img src="./images/works/work-1.jpg">
@@ -142,28 +142,25 @@
   <!-- -------- Contact ---------->
 
   <section id="contact" class="contact-bg">
-    <div class="container">
-      <h1 class="section-title">Contact Me</h1>
-      <div class="row">
-        <!-- <div class="row"> -->
-        <div class="contact-left">
-          <form>
-            <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
+    <h1 class="section-title">Contact Me</h1>
+    <div class="row container">
+      <form class="contact-form">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <div class="contact-btn">
+          <button type="submit" class="btn">Submit</button>
         </div>
-        <div class="contact-right">
-          <p><i class="fas fa-paper-plane"></i> contact@example</p>
-          <p> <i class="fas fa-phone-square-alt"></i> 0123456789</p>
-          <div class="social-icons">
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-github"></i></a>
-            <a href=""><i class="fab fa-linkedin"></i></a>
-          </div>
-          <a href="images/works/CV_MatheusFonseca.pdf" download class="btn btn2">Download CV</a>
+      </form>
+      <div class="contact-info">
+        <p><i class="fas fa-paper-plane"></i> contact@example</p>
+        <p> <i class="fas fa-phone-square-alt"></i> 0123456789</p>
+        <div class="social-icons">
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-github"></i></a>
+          <a href=""><i class="fab fa-linkedin"></i></a>
         </div>
+        <a href="images/works/CV_MatheusFonseca.pdf" download class="btn">Download CV</a>
       </div>
     </div>
   </section>

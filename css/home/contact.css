@@ -5,9 +5,17 @@
   display: flex;
   gap: 6%;
 }
-form input,
-form textarea {
-  width: 100%;
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 60%;
+}
+.contact-btn {
+  flex: 1 1 400px;
+}
+.contact-form input,
+textarea {
+  flex: 1 1 450px;
   border: 1px solid var(--purple);
   background-color: var(--gray);
   outline: none;
@@ -19,24 +27,23 @@ form textarea {
   font-size: 1.2rem;
   border-radius: 6px;
 }
-.contact-left {
-  flex-basis: 47%;
+.contact-info {
 }
-.contact-right {
-  flex-basis: 47%;
-}
-@media (max-width: 850px) {
+@media (max-width: 750px) {
   .row {
-    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contact-form {
+    flex-basis: auto;
   }
 }
-.contact-right p {
+.contact-info p {
   margin-top: 30px;
   font-size: 1.2rem;
   display: flex;
   flex-wrap: nowrap;
 }
-.contact-right p i {
+.contact-info p i {
   color: var(--purple);
   margin-right: 15px;
   font-size: 1.5rem;
