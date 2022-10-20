@@ -7,11 +7,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   align-items: center;
-  height: auto;
+  /* height: auto; */
   /* height: 100%; */
 }
 #home .content {
-  width: 100%;
+  width: auto;
   margin-top: 50px;
   color: var(--white);
 }
@@ -33,6 +33,14 @@
   margin-bottom: 10px;
   font-weight: 500;
   color: var(--purple);
+}
+.img {
+  width: 100%;
+  height: auto;
+  /* display: block; */
+  border-radius: 15px;
+  margin: 0px;
+  object-fit: contain;
 }
 @media (max-width: 1000px) {
   #home .content h1 {

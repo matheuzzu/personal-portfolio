@@ -5,6 +5,7 @@
 .navbar {
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 .max-width {
   max-width: 1300px;

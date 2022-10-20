@@ -1,20 +1,29 @@
 .portfolio-bg {
   background-image: var(--bg-grad);
 }
-.work-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
+.work-list ul {
+  display: flex;
+  gap: 20px;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
 }
-.work {
+.work-list li {
+  min-width: 280px;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
 }
-.work img {
-  width: 100%;
+.work-list img {
+  max-width: 100%;
+  display: block;
   border-radius: 10px;
   transition: transform 0.5s;
+}
+.efect {
+  align-content: center;
+  justify-items: center;
 }
 .layer {
   width: 100%;
@@ -51,9 +60,9 @@
   text-align: center;
 }
 
-.work:hover img {
+.work-list li:hover img {
   transform: scale(1.1);
 }
-.work:hover .layer {
+.work-list li:hover .layer {
   height: 100%;
 }

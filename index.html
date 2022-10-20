@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="/js/scripts.js"></script>
@@ -60,41 +60,37 @@
   <!-- ---------about--------- -->
 
   <article id="about" class="about-bg">
-    <div class="container">
-      <h1 class="section-title">About Me</h1>
-      <div class="row">
-        <div class="about-col-1">
-          <img src="/images/user.png" alt="">
+    <h1 class="section-title">About Me</h1>
+    <div class="about-content container">
+      <img src="/images/user.png" alt="">
+      <div class="about-col-2">
+        <h1 class="sub-title">Hi there! I'm Matheus Fonseca</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, corporis ipsa autem quia illo deserunt, molestias animi voluptatem omnis facilis accusantium quisquam cumque saepe! Quidem soluta illum voluptas! Maiores, fuga?</p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
         </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">Hi there! I'm Matheus Fonseca</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, corporis ipsa autem quia illo deserunt, molestias animi voluptatem omnis facilis accusantium quisquam cumque saepe! Quidem soluta illum voluptas! Maiores, fuga?</p>
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-          </div>
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-              <li><span>Web Development</span><br>Web App Development</li>
-              <li><span>App Development</span><br>Building Android/IOS apps</li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="experience">
-            <ul>
-              <li><span>2021 - Current</span><br>UI/UX Design Training</li>
-              <li><span>2019 - 2021</span><br>Team lead at Starapp LLC</li>
-              <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin</li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>2016</span><br>UI/UX at ET Institute</li>
-              <li><span>2017</span><br>MBA from USP</li>
-              <li><span>2018</span><br>BBA from Harvard</li>
-            </ul>
-          </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+            <li><span>Web Development</span><br>Web App Development</li>
+            <li><span>App Development</span><br>Building Android/IOS apps</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2021 - Current</span><br>UI/UX Design Training</li>
+            <li><span>2019 - 2021</span><br>Team lead at Starapp LLC</li>
+            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2016</span><br>UI/UX at ET Institute</li>
+            <li><span>2017</span><br>MBA from USP</li>
+            <li><span>2018</span><br>BBA from Harvard</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -102,35 +98,43 @@
 
   <!--------- Portfolio-------->
 
-  <article id="portfolio" class="portfolio-bg">
+  <article id="portfolio" class="work-list portfolio-bg">
     <div class="container">
       <h1 class="section-title">Portfolio</h1>
-      <div class="work-list">
-        <div class="work">
+      <ul>
+        <li>
           <img src="/images/works/work-1.jpg">
           <div class="layer">
             <h3>YouDrone</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolorum Lorem!</p>
             <a href="https://matheuzzu.github.io/youdrone/"><i class="fas fa-external-link-alt"></i></a>
           </div>
-        </div>
-        <div class="work">
+        </li>
+        <li>
           <img src="/images/works/work-2.png">
           <div class="layer">
             <h3>Music App</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolorum Lorem!</p>
             <a href="#"><i class="fas fa-external-link-alt"></i></a>
           </div>
-        </div>
-        <div class="work">
+        </li>
+        <li>
           <img src="/images/works/work-3.png">
           <div class="layer">
             <h3>Online Shopping App</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolorum Lorem!</p>
             <a href="#"><i class="fas fa-external-link-alt"></i></a>
           </div>
-        </div>
-      </div>
+        </li>
+        <li>
+          <img src="/images/works/5.jpg">
+          <div class="layer">
+            <h3>YouDrone</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolorum Lorem!</p>
+            <a href="https://matheuzzu.github.io/youdrone/"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </li>
+      </ul>
       <a href="#" class="btn">See more</a>
     </div>
   </article>
@@ -141,7 +145,16 @@
     <div class="container">
       <h1 class="section-title">Contact Me</h1>
       <div class="row">
+        <!-- <div class="row"> -->
         <div class="contact-left">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+        <div class="contact-right">
           <p><i class="fas fa-paper-plane"></i> contact@example</p>
           <p> <i class="fas fa-phone-square-alt"></i> 0123456789</p>
           <div class="social-icons">
@@ -150,14 +163,6 @@
             <a href=""><i class="fab fa-linkedin"></i></a>
           </div>
           <a href="images/works/CV_MatheusFonseca.pdf" download class="btn btn2">Download CV</a>
-        </div>
-        <div class="contact-right">
-          <form>
-            <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
         </div>
       </div>
     </div>

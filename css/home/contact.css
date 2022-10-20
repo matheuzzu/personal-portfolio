@@ -1,17 +1,42 @@
 .contact-bg {
   background-image: var(--bg-grad);
 }
+.row {
+  display: flex;
+  gap: 6%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 1px solid var(--purple);
+  background-color: var(--gray);
+  outline: none;
+  padding: 15px 10px 15px 10px;
+  margin: 10px;
+  margin-right: 0%;
+  margin-left: 0%;
+  color: #333;
+  font-size: 1.2rem;
+  border-radius: 6px;
+}
 .contact-left {
-  flex-basis: 35%;
+  flex-basis: 47%;
 }
 .contact-right {
-  flex-basis: 60%;
+  flex-basis: 47%;
 }
-.contact-left p {
+@media (max-width: 850px) {
+  .row {
+    flex-direction: column;
+  }
+}
+.contact-right p {
   margin-top: 30px;
   font-size: 1.2rem;
+  display: flex;
+  flex-wrap: nowrap;
 }
-.contact-left p i {
+.contact-right p i {
   color: var(--purple);
   margin-right: 15px;
   font-size: 1.5rem;
@@ -29,20 +54,4 @@
 .social-icons a:hover {
   color: var(--purple);
   transform: translateY(-5px);
-}
-.contact-right form {
-  width: 100%;
-}
-form input,
-form textarea {
-  width: 100%;
-  border: 1px solid var(--purple);
-  /* border-color: var(--purple); */
-  background-color: var(--gray);
-  outline: none;
-  padding: 15px;
-  margin: 15px 0;
-  color: #333;
-  font-size: 1.2rem;
-  border-radius: 6px;
 }
